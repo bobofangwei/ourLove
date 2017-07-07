@@ -1,0 +1,131 @@
+.main {
+    margin-top: 30px;
+}
+
+
+/*头部的文字部分*/
+
+.desc {
+    text-align: center;
+}
+
+.desc h1 {
+    font-size: 30px;
+    font-weight: 800;
+    margin-bottom: 15px;
+    font-family: 'Droid Serif', serif;
+}
+
+.desc p {
+    font-family: 'Droid Serif', serif;
+    font-style: italic;
+    font-size: 20px;
+    line-height: 40px;
+    height: 40px;
+    font-weight: 500;
+    margin: 0px auto;
+    letter-spacing: 5px;
+}
+
+.heart>li {
+    text-align: center;
+}
+
+.heart .figure-item {
+    width: 200px;
+    height: 133px;
+    display: inline-block;
+    position: relative;
+    margin: 0 8px 8px 0;
+    overflow: hidden;
+}
+
+
+.figure-item img {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 200px;
+    height: 133px;
+}
+
+.figure-item figcaption{
+    position: absolute;
+    top:0;
+    left:-210px;
+    width:200px;
+    height:133px;
+    background: url(../images/heart-bg.jpg) no-repeat center black;
+    -webkit-transition:all .5s ease-in;
+    -moz-transition:all .5s ease-in;
+    -o-transition:all .5s ease-in;
+    transition:all .5s ease-in;  
+}
+.figure-item figcaption p{
+    position: absolute;
+    width:100%;
+    top:85px;
+    left:0;
+    font-size:13px;
+    color:#eee;
+    font-weight: 500;
+    font-family: 'Droid Serif'
+     
+}
+.figure-item:hover figcaption{
+    top:0;
+    left:0; 
+    opacity: 0.8;
+}
+
+
+.intro>p {
+    text-align: center;
+    font-size: 16px;
+    letter-spacing: 3px;
+    font-weight: 500;
+}
+
+.jiugongge-wrapper {
+    margin-top: 50px;
+}
+
+.jiugongge-wrapper p {
+    text-align: center;
+    font-size: 20px;
+    height: 25px;
+    line-height: 25px;
+}
+
+ul.jiugongge {
+    width: 560px;
+    overflow: hidden;
+    margin: 0 auto;
+    margin-top: 30px;
+    border: 1px solid #865701;
+    padding: 20px;
+    border-radius: 8px;
+}
+
+.jiugongge li>div {
+    width: 520px;
+    padding: 0 10px;
+    overflow: hidden;
+    border-bottom: none;
+    background: #000;
+}
+
+
+/*.jiugongge .jiugongge-inner{
+    background: #000;
+    border:1px solid red;
+    margin: 20px 20px;
+    overflow: hidden;
+}*/
+
+.jiugongge img {
+    width: 150px;
+    height: 150px;
+    margin: 8px;
+    float: left;
+}

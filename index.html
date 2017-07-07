@@ -1,0 +1,104 @@
+<!DOCTYPE HTML>
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="en" lang="en">
+
+<head>
+    <title>Leishao & Bobo</title>
+    <meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <style type="text/css">
+    @font-face {
+        font-family: digit;
+        src: url('digital-7_mono.ttf') format("truetype");
+    }
+    </style>
+    <link href="css/default.css" type="text/css" rel="stylesheet">
+	    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <script type="text/javascript" src="js/jquery.js"></script>
+    <script type="text/javascript" src="js/garden.js"></script>
+    <script type="text/javascript" src="js/functions.js"></script>
+</head>
+
+<body>
+	<header class="f-clearfix">
+        <div class="center-1200 f-clearfix">
+            <span class="brand f-right">leishao&bobo</span>
+            <ul id="nav-menu">
+                <li class="active"><a href="./index.html">首页</a></li>
+                <li ><a href="./2013.html">2013</a></li>
+                <li><a href="./2014.html">2014</a></li>
+                <li ><a href="./2015.html">2015</a></li>
+                <li><a href="./2016.html ">2016</a></li>
+                <li><a href="./2017.html ">2017</a></li>
+            </ul>
+        </div>
+        <div class="bottom f-clearfix"></div>
+    </header>
+	
+    <div id="mainDiv">
+        <div id="content">
+            <div id="code">
+                <h2 class="keyword">那些年,</h2>
+                <h3 class="keyword">我们一起走过的时光...</h3>
+                <p><a href="./2013.html" class="comments" style="text-decoration:underline">2013</a><span class=""><span class="space"></span>记得当年尚年少,</span></p>
+                <p><a href="./2014.html" class="comments" style="text-decoration:underline">2014</a><span class="space"></span>你负责善后我负责闹,</p>
+                <p><a href="./2015.html" class="comments" style="text-decoration:underline">2015</a><span class="space"></span>有你一直，陪在我身旁,</p>
+                <p><a href="./2016.html" class="comments" style="text-decoration:underline">2016</a><span class="space"></span>再平凡的日子</p>
+                <p><a href="./2017.html" class="comments" style="text-decoration:underline">2017</a><span class="space"></span>都洋溢着满满的笑...</p>
+            </div>
+            <div id="loveHeart">
+                <canvas id="garden"></canvas>
+                <div id="words">
+                    <div id="messages">
+                        既然过去，已经一起走过了
+                        <div id="elapseClock"></div>
+                    </div>
+                    <div id="loveu">
+                        那么将来，也不妨一起变老吧
+                        <br/>
+                        <div class="signature">- 磊少&博博&nbsp;</div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div id="copyright">
+            生日快乐，我的磊少！
+            <br /> &nbsp;&nbsp;&nbsp;&nbsp;———博博
+        </div>
+    </div>
+    <script type="text/javascript">
+    var offsetX = $("#loveHeart").width() / 2;
+    var offsetY = $("#loveHeart").height() / 2 - 55;
+    var together = new Date();
+    together.setFullYear(2013, 1, 1);
+    together.setHours(0);
+    together.setMinutes(0);
+    together.setSeconds(0);
+    together.setMilliseconds(0);
+
+    if (!document.createElement('canvas').getContext) {
+        var msg = document.createElement("div");
+        msg.id = "errorMsg";
+        msg.innerHTML = "Your browser doesn't support HTML5!<br/>Recommend use Chrome 14+/IE 9+/Firefox 7+/Safari 4+";
+        document.body.appendChild(msg);
+        $("#code").css("display", "none")
+        $("#copyright").css("position", "absolute");
+        $("#copyright").css("bottom", "10px");
+        document.execCommand("stop");
+    } else {
+        setTimeout(function() {
+            startHeartAnimation();
+        }, 3000);
+
+        timeElapse(together);
+        setInterval(function() {
+            timeElapse(together);
+        }, 500);
+
+        adjustCodePosition();
+        $("#code").typewriter();
+    }
+    </script>
+</body>
+
+</html>

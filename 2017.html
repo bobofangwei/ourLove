@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="zh_CN">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="author" content="Li weibo,buptweibo@163.com">
+    <title>我们的2017</title>
+    <link href="./js/video-js/video-js.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="./css/reset.css">
+    <link rel="stylesheet" href="./css/main.css">
+    <link rel="stylesheet" href="./css/header.css">
+    <link rel="stylesheet" href="./css/footer.css">
+    <link rel="stylesheet" href="./css/2017.css">
+</head>
+
+<body>
+    <header class="f-clearfix">
+        <div class="center-1200 f-clearfix">
+            <span class="brand f-right">leishao&bobo</span>
+            <ul id="nav-menu">
+                <li><a href="./index.html">首页</a></li>
+                <li><a href="./2013.html">2013</a></li>
+                <li><a href="./2014.html">2014</a></li>
+                <li><a href="./2015.html">2015</a></li>
+                <li><a href="./2016.html ">2016</a></li>
+                <li class="active"><a href="./2017.html ">2017</a></li>
+            </ul>
+        </div>
+    </header>
+    <div class="wrap" id="gallery">
+    <!--.photo负责平移和旋转-->
+        <div class="photo photo-center" index="{{index}}">
+        <!--.photo-wrap负责3D旋转-->
+            <div class="photo-wrap">
+                <div class="side side-front">
+                    <div class="image">
+                        <img src="{{img}}" alt="">
+                    </div>
+                    <div class="caption">{{caption}}</div>
+                </div>
+                <div class="side side-back">
+                    <p class="desc">{{desc}}</p>
+                </div>
+            </div>
+        </div>
+        <div class="nav">
+            <i class="nav-item"></i>
+        </div>
+    </div>
+    <footer>
+        <p>生日快乐,我的磊少!</br>——博博</p>
+    </footer>
+    <script src="./js/jquery.js"></script>
+    <script src="./js/main.js"></script>
+    <script src="./js/gallery.js"></script>
+</body>
+
+</html>

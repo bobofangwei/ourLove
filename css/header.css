@@ -1,0 +1,47 @@
+header {
+    height: 70px;
+    line-height: 70px;
+    background: #000;
+    top:0;
+    left:0;
+}
+
+header .brand {
+    font-family: "segoe print";
+    font-size: 2em;
+    display: block;
+    color: #B28601;
+    font-weight: 600;
+}
+
+header li {
+    float: left;
+    height: 40px;
+    line-height: 40px;
+    margin-top: 29px;
+}
+
+header li>a {
+    display: block;
+    color: #865701;
+    padding: 0 20px;
+    font-size: 1.5em;
+    border-top-left-radius: 7px;
+    border-top-right-radius: 7px;
+    
+}
+
+header li:hover>a,
+header li.active>a {
+    color: #B28601;
+    border: 1px solid #865701;
+    border-width: 1px 1px 0 1px;
+    background:#000;
+}
+
+header .bottom {
+    background: #1A1C1E;
+    height: 30px;
+    margin-top: -1px;
+    border-top: 1px solid #865701;
+}
